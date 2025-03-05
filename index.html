@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人主页 | 呜呜的小站</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/clock.css">
+  <link rel="stylesheet" href="css/daohang.css">
+  <link rel="stylesheet" href="css/intro.css">
+  <link rel="stylesheet" href="css/divide.css">
+</head>
+<body>
+  <!-- 顶部导航栏 -->
+  <nav class="nav-bar">
+    <div class="personal-info">
+      <span class="platform-name">小红书</span>
+      <span class="username">| 呜呜</span>
+    </div>
+    <span class="welcome-text">欢迎来到我的个人主页</span>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="网页内容搜索...">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7f8c8d">
+        <path d="M15.5 15.5L19 19M5 11a6 6 0 1 0 12 0 6 6 0 0 0-12 0z"/>
+      </svg>
+    </div>
+  </nav>
+  <div class="maincontent_80px">
+    <!-- 时间模块 -->
+<div class="time-card">
+  <div class="time-header">
+    🕒 当前时间
+    <span class="live-indicator">LIVE</span>
+  </div>
+  <div id="realtime-clock" class="time-display">
+    <span class="date-part">2025/03/04</span>
+    <span class="time-part">14:23:45</span>
+    <span class="week-part">星期三</span>
+  </div>
+</div>
+  </div>
+<div class="main-container2">
+  <!-- 左边栏 -->
+  <div class="left-column">
+      <img src="./images/intro.jpg" alt="照片">
+      <p>呜呜</p>
+
+      <div class="contact-card">
+        <h3 >个人信息</h3>
+        <!-- 个人信息模块 -->
+<div class="personal-info-section">
+  <!-- 基础信息色块 -->
+  <div class="info-card">
+    <div class="info-label">姓名</div>
+      <div class="info-item">
+        <span>呜呜</span>
+    </div>
+    <div class="info-label">学校</div>
+      <div class="info-item">
+        <span>中南大学</span>
+      </div>
+  </div>
+</div>
+    </div>
+      <div class="contact-card"">
+          <h3>联系我</h3>
+          <div class="contact-item xiaohongshu">
+
+            <div class="contact-label">小红书</div>
+            <!-- 小红书链接示例 -->
+            <a href="https://www.xiaohongshu.com/user/profile/61e4349b000000002102a5c1" 
+            class="contact-content"
+            target="_blank" 
+            rel="noopener noreferrer"> <!-- 安全跳转 -->
+            呜呜
+            </a>
+          </div>
+
+          <div class="contact-item website">
+            <div class="contact-label">网页</div>
+              <!-- 网页链接示例 -->
+              <a href="http://zzz809.github.io/wuwu" 
+              class="contact-content"
+              target="_blank" 
+              rel="noopener noreferrer">
+              http://zzz809.github.io/wuwu
+              </a>
+          </div>
+
+           <!-- 邮箱 -->
+          <div class="contact-item email">
+            <div class="contact-label">邮箱</div>
+            <a href="mailto:ft2023@126.com" class="contact-content">ft2023@126.com</a>
+          </div>
+          <div class="contact-item qq">
+            <div class="contact-label">QQ</div>
+            <a href="https://qm.qq.com/q/5paDenVfoI" 
+              class="contact-content"
+              target="_blank" 
+              rel="noopener noreferrer">
+              718123472
+              </a>
+          </div>
+      </div>
+  </div>
+
+  <!-- 右边栏 -->
+  <div class="right-column">
+      <!-- 修改后的HTML结构 -->
+      <!-- 结构优化 -->
+<div class="resume-container">
+  <!-- 经历模块，保留备用 -->
+  <section class="resume-section">
+    <h2 class="section-title">夏令营/预推免经历</h2>
+    <div class="content-block">
+      <ul class="clean-list">
+        <li class="info-item">
+          <div class="info-header">
+            <span class="decorative-line"></span>
+            <h3>东南大学集成电路学院</h3>
+          </div>
+          <p>待更新，敬请期待...</p>
+        </li>
+        <!-- 其他列表项 -->
+      </ul>
+    </div>
+  </section> 
+
+  <!-- 获奖模块 -->
+  <section class="awards-section">
+    <h2 class="section-title">本科获奖情况</h2>
+    <div class="content-block">
+      <ul class="clean-list">
+        <li class="award-item">
+          <span class="year-tag">2025年02月</span>
+          <p>中南大学2025届优秀毕业生</p>
+        </li>
+        <li class="award-item">
+          <span class="year-tag">2024年12月</span>
+          <p>2024年度国家级奖学金</p>
+        </li>
+        <li class="award-item">
+          <span class="year-tag">2024年10月</span>
+          <p>2023-2024学年中南大学一等奖学金</p>
+        </li>
+        <li class="award-item">
+          <span class="year-tag">2023年11月</span>
+          <p>高教杯全国大学生数学建模竞赛国家级二等奖（湖南省一等奖）</p>
+        </li>
+        <li class="award-item">
+          <span class="year-tag">2023年05月</span>
+          <p>湖南省大学生创新创业项目优秀结题（项目负责人）</p>
+        </li>
+        <!-- 其他奖项 -->
+      </ul>
+    </div>
+  </section>
+</div>
+</div>
+  </div>
+</div>
+
+ <!-- 红色分割线 -->
+ <div class="divider-container">
+  <div class="red-divider"></div>
+</div>
+
+ <!-- 分类导航 -->
+ <div class="categories">
+  <button class="category active" data-category="all">全部</button>
+  <button class="category" data-category="uni">大学</button>
+  <button class="category" data-category="tech">技术分享</button>
+  <button class="category" data-category="life">生活日常</button>
+</div>
+<!-- 内容区域 -->
+<main class="content" >
+  <div class="post-list" data-category="uni">
+    <article class="post-item" data-category="uni" onclick="window.open('pages/post1.html', '_blank')">
+      <div class="post-date">2025-03-04</div>
+      <h2 class="post-title">中南大学介绍</h2>
+      <p class="post-excerpt">中南大学由原湖南医科大学、长沙铁道学院...</p>
+    </article>
+  
+    <article class="post-item" data-category="tech">
+      <div class="post-date">2025-03-05</div>
+      <h2 class="post-title">JavaScript开发技巧</h2>
+      <p class="post-excerpt">最新前端技术分享...</p>
+    </article>
+
+  <!-- 添加更多示例内容 -->
+    <article class="post-item" data-category="life">
+      <div class="post-date">2025-03-06</div>
+      <h2 class="post-title">周末骑行日记</h2>
+      <p class="post-excerpt">长沙周边骑行路线推荐...</p>
+    </article>
+  </div>
+</main>
+
+
+  <!-- 底部版权 -->
+  <footer class="footer">
+    <p>版权所有 © 小红书博主呜呜 2023-2025 All Rights Reserved QQ号718123472 邮箱ft2023@126.com</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/clock.js"></script>
+
+</body>
+</html>
