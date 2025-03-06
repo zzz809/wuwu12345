@@ -11,30 +11,22 @@
 .mm-profile-container {
   display: flex;
   min-width: 1100px;
-  max-width: 1200px; 
-  margin: 20px auto; /* 统一垂直间距为20px，水平居中 */
+  max-width: 1200px;
+  margin: 20px auto;
   background: white;
   border-radius: 16px;
   box-shadow: var(--mm-card-shadow);
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
-/* 统一响应式断点为1240px以下 */
+
+/* 响应式适配 */
 @media (max-width: 1240px) {
   .mm-profile-container {
     min-width: auto;
     width: 95%;
-    max-width: 1000px; /* 统一最大宽度 */
+    max-width: 1000px;
     flex-direction: column;
-  }
-  
-  .profile-section {
-    min-width: auto; 
-    max-width: 1000px; /* 与主容器一致 */
-    width: 95%; /* 统一宽度占比 */
-    margin: 20px auto; /* 水平居中 */
-    padding: 1.5rem; /* 适当保留原有内间距 */
-    border-radius: 0.75rem;
   }
   
   /* 移动端隐藏复杂效果 */
@@ -43,15 +35,13 @@
   }
 }
 
-/* 移除.profile-section原有的768px断点，避免冲突 */
-/* 超大屏幕适配（可选，若需要保留） */
 @media (min-width: 1600px) {
-  .mm-profile-container,
-  .profile-section {
-    margin-left: auto; /* 保持居中，避免百分比偏差 */
+  .mm-profile-container {
+    margin-left: auto;
     margin-right: auto;
   }
 }
+
 /* 左侧信息面板 */
 .mm-profile-sidebar {
   background: var(--mm-secondary-bg);
