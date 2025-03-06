@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/daohang.css">
   <link rel="stylesheet" href="css/intro.css">
   <link rel="stylesheet" href="css/divide.css">
+  <link rel="stylesheet" href="css/sort.css">
 </head>
 <body>
   <!-- 顶部导航栏 -->
@@ -166,32 +167,44 @@
  <!-- 分类导航 -->
  <div class="categories">
   <button class="category active" data-category="all">全部</button>
-  <button class="category" data-category="uni">大学</button>
-  <button class="category" data-category="tech">技术分享</button>
-  <button class="category" data-category="life">生活日常</button>
+  <button class="category" data-category="benke">本科经验</button>
+  <button class="category" data-category="baoyan">保研经验</button>
+  <button class="category" data-category="xuexi">学习资料</button>
+  <button class="category" data-category="other">其他</button>
+</div>
+<!-- 在post-list上方添加排序控件 -->
+    <div class="sort-wrapper">
+        <button class="sort-btn active" data-order="desc">
+            <span class="icon">↓</span>
+            <span class="text">最新优先</span>
+        </button>
+        <button class="sort-btn" data-order="asc">
+            <span class="icon">↑</span>
+            <span class="text">旧文优先</span>
+        </button>
+    </div>
 </div>
 <!-- 内容区域 -->
 <main class="content" >
-  <div class="post-list" data-category="uni">
-    <article class="post-item" data-category="uni" onclick="window.open('pages/post1.html', '_blank')">
+  <div class="post-list" data-category="other">
+
+    <article class="post-item" data-category="other" onclick="window.open('pages/post1.html', '_blank')">
       <div class="post-date">2025-03-04</div>
-      <h2 class="post-title">中南大学介绍</h2>
+      <h2 class="post-title">中南大学介绍（测试网页）</h2>
       <p class="post-excerpt">中南大学由原湖南医科大学、长沙铁道学院...</p>
     </article>
   
-    <article class="post-item" data-category="tech">
+    <article class="post-item" data-category="baoyan">
       <div class="post-date">2025-03-05</div>
-      <h2 class="post-title">JavaScript开发技巧</h2>
-      <p class="post-excerpt">最新前端技术分享...</p>
+      <h2 class="post-title">东南大学集成电路学院夏令营面试经验</h2>
+      <p class="post-excerpt">2024年8月参加东南大学面试...</p>
     </article>
 
-  <!-- 添加更多示例内容 -->
-    <article class="post-item" data-category="life">
+    <article class="post-item" data-category="benke">
       <div class="post-date">2025-03-06</div>
-      <h2 class="post-title">周末骑行日记</h2>
-      <p class="post-excerpt">长沙周边骑行路线推荐...</p>
+      <h2 class="post-title">中南大学各课程学习经验</h2>
+      <p class="post-excerpt">加权成绩提高方法...</p>
     </article>
-  </div>
 </main>
 
 
@@ -204,6 +217,7 @@
   <script src="js/main.js"></script>
   <script src="js/search.js"></script>
   <script src="js/clock.js"></script>
+  <script src="js/sort.js"></script>
 
 </body>
 </html>
