@@ -1,0 +1,61 @@
+/* PDF查看器容器 */
+.pdf-viewer-container {
+  margin: 20px 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* 工具栏样式 */
+.pdf-viewer-toolbar {
+  padding: 12px 20px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.pdf-viewer-button {
+  padding: 6px 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.pdf-viewer-button:hover {
+  opacity: 0.9;
+}
+
+.pdf-page-info {
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* 画布容器 */
+.pdf-canvas-wrapper {
+  position: relative;
+  min-height: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 加载状态 */
+.pdf-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #999;
+}
+
+/* 画布样式 */
+.pdf-canvas {
+  max-width: 100%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border: 1px solid #ddd;
+}
