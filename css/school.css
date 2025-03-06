@@ -27,6 +27,7 @@
   /* 响应式适配 */
   @media (max-width: 1240px) {
     .profile-section {
+      overflow: hidden;
       min-width: auto;
       max-width: 1000px;
       width: 95%;
@@ -154,4 +155,21 @@
       opacity: 1;
       transform: translateY(0);
     }
+}
+
+.profile-section__btn .profile-section__content .profile-section__content--active .profile-section__divider .profile-section__item{
+  width: 100%; /* 强制宽度与父容器一致 */
+  max-width: 100%; /* 防止缩放溢出 */
+  margin-left: 0; /* 取消可能存在的偏移 */
+  margin-right: 0;
+  padding: 0 20px; /* 内间距适配父容器 */
+  box-sizing: border-box; /* 包含 padding 计算宽度 */
+
+  /* 适配移动端 */
+@media (max-width: 768px) {
+  .profile-section .divider-line,
+  .profile-section .copyright-block {
+    padding: 0 12px; /* 减少移动端内间距 */
+  }
+}
 }
