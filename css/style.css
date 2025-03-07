@@ -312,11 +312,18 @@ body::after {
     gap: 0.5rem;
     max-width: 60%;
   }
+
   /* 优化搜索框 */
   .search-box {
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
     width: 35%; /* 固定宽度 */
   }
 
+  #searchInput {
+    width: 80%; /* 缩小输入框 */
+    font-size: 0.9rem;
+  }
 }
 
 /* 超小屏幕优化（可选） */
