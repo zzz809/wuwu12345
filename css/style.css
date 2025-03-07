@@ -298,7 +298,6 @@ body::after {
 /* 新增：移动端适配 */
 @media (max-width: 768px) {
   .nav-bar {
-    height: 50px; /* 降低高度 */
     padding: 0.5rem 1rem; /* 减少内边距 */
     flex-wrap: wrap; /* 允许换行 */
   }
@@ -313,26 +312,11 @@ body::after {
     gap: 0.5rem;
     max-width: 60%;
   }
-
-  .platform-name {
-    font-size: 1.2rem; /* 调小字号 */
-  }
-
-  .username {
-    font-size: 1rem; /* 调小字号 */
-  }
-
   /* 优化搜索框 */
   .search-box {
-    padding: 0.3rem 1rem;
-    border-radius: 20px;
     width: 35%; /* 固定宽度 */
   }
 
-  #searchInput {
-    width: 80%; /* 缩小输入框 */
-    font-size: 0.9rem;
-  }
 }
 
 /* 超小屏幕优化（可选） */
