@@ -73,6 +73,12 @@ body::after {
   font-size: 1.3rem;
   letter-spacing: 1px;
 }
+/* 中间欢迎语 */
+.welcome-text_tem1 {
+  color: #ecf0f1;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
 
 /* 右侧搜索框 */
 .search-box {
