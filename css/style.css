@@ -18,22 +18,33 @@ body {
   -webkit-user-select: none;/* 文档防复制 */
 }
 
-/* 全屏水印系统 */
+body::before,
 body::after {
-  content: "小红书博主：呜呜 | 版权所有";
+  content: "小红书博主：呜呜 | 版权所有\A 未经授权严禁转载 | 盗用必究"; /* 使用\A换行 */
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-30deg);
   z-index: 9999;
-  font-size: 24px;
   color: rgba(0, 0, 0, 0.08);
   pointer-events: none;
-  white-space: nowrap;
   font-family: 'Microsoft YaHei', sans-serif;
   font-weight: 300;
   letter-spacing: 2px;
+  white-space: pre; /* 保留换行 */
+  text-align: center;
   animation: waterMark 1.5s ease-out;
+}
+
+body::before {
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  font-size: 24px;
+}
+
+body::after {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(30deg);
+  font-size: 20px;
 }
 
 /* ===== 顶部导航栏 ===== */
@@ -422,9 +433,4 @@ body::after {
 
 .category:active {
   animation: buttonScale 0.3s ease;
-}
-
-/* 关键隐藏样式 */
-.post-item.hidden {
-  display: none !important;
 }
