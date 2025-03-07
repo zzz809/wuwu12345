@@ -333,11 +333,6 @@ body::after {
     width: 80%; /* 缩小输入框 */
     font-size: 0.9rem;
   }
-
-  /* 新增：页面主体顶部间距 */
-  body {
-    padding-top: 50px !important;
-  }
 }
 
 /* 超小屏幕优化（可选） */
