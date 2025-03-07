@@ -49,18 +49,6 @@ body::after {
   align-items: center;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
-/* 滚动时固定定位 */
-.nav-bar.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  animation: navSlideDown 0.3s ease;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-@keyframes navSlideDown {
-  from { transform: translateY(-100%); }
-  to { transform: translateY(0); }
-}
 /* 左侧个人信息 */
 .personal-info {
   display: flex;
