@@ -1,0 +1,181 @@
+/* ================= 表格全局样式 ================= */
+.college-table {
+  margin: 2rem auto;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  background: #fff;
+}
+
+.center-table {
+  text-align: center;
+}
+
+/* ================= 基础表格结构 ================= */
+table {
+  font-family: 
+        'MyTimes',
+        'Times New Roman',
+        'MyFangSong',         /* 自定义字体 */
+        '仿宋',               /* Windows系统字体 */
+        'FangSong',           /* macOS系统字体 */
+        'STFangsong',         /* 其他系统变体 */
+        serif;                /* 通用衬线字体 */
+    font-size: 20px;
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  position: relative;
+}
+
+th {
+  font-family: 
+        'MyTimes',
+        'Times New Roman',
+        'MyFangSong',         /* 自定义字体 */
+        '仿宋',               /* Windows系统字体 */
+        'FangSong',           /* macOS系统字体 */
+        'STFangsong',         /* 其他系统变体 */
+        serif;                /* 通用衬线字体 */
+    font-size: 20px;
+  background: #f8f9fa;
+  font-weight: 600;
+  padding: 12px 15px;
+  border-bottom: 2px solid #e9ecef;
+  text-align: center;
+}
+
+td {
+  font-family: 
+        'MyTimes',
+        'Times New Roman',
+        'MyFangSong',         /* 自定义字体 */
+        '仿宋',               /* Windows系统字体 */
+        'FangSong',           /* macOS系统字体 */
+        'STFangsong',         /* 其他系统变体 */
+        serif;                /* 通用衬线字体 */
+  padding: 12px 15px;
+  border-bottom: 1px solid #e9ecef;
+  color: #495057;
+  text-align: center;
+}
+
+tr:hover td {
+  background-color: #f8f9fa;
+}
+
+/* ================= 移动端适配 (≤768px) ================= */
+@media (max-width: 768px) {
+  .college-table {
+    margin: 1rem 0;
+    max-width: 100vw;
+    box-shadow: none;
+  }
+
+  table {
+    min-width: 120%;
+    width: max-content;
+  }
+
+  th, td {
+    padding: 10px 8px;
+    white-space: nowrap;
+  }
+
+  /* 粘性表头 */
+  th {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  }
+
+  /* 粘性首列 */
+  td:first-child {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  }
+}
+
+/* ================= 小屏优化 (≤480px) ================= */
+@media (max-width: 480px) {
+  table {
+    min-width: 150%;
+    font-size: 20px;
+  }
+
+  th, td {
+    padding: 8px 6px;
+  }
+
+  /* 滚动条可视化 */
+  .college-table::-webkit-scrollbar {
+    height: 4px;
+    background: rgba(0,0,0,0.1);
+  }
+  
+  .college-table::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 2px;
+  }
+
+  /* 首列文字对齐优化 */
+  td:first-child {
+    text-align: left;
+    padding-left: 10px;
+  }
+}
+
+
+  /* 表格容器优化 */
+  .college-table {
+    margin: 0;
+    max-width: 100% !important;
+    box-shadow: none;
+    overflow: visible !important;
+    page-break-inside: avoid;
+  }
+
+  /* 表格本体优化 */
+  table {
+    min-width: 100% !important;
+    width: 100% !important;
+    page-break-inside: auto;
+  }
+
+  /* 增强打印可读性 */
+  th {
+    background: #f0f0f0 !important; /* 灰度背景节省墨水 */
+  }
+
+  td, th {
+    padding: 8pt !important;
+    border: 1px solid #ddd !important;
+    white-space: normal !important; /* 允许文字换行 */
+  }
+
+  /* 取消粘性定位 */
+  th,
+  td:first-child {
+    position: static !important;
+    box-shadow: none !important;
+  }
+
+  /* 添加打印标题 */
+  .print-title {
+    display: block;
+    text-align: center;
+    margin-bottom: 20pt;
+  }
+
+  /* 强制分页控制 */
+  .avoid-break {
+    page-break-inside: avoid;
+  }
